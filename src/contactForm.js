@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -30,9 +28,6 @@ function ContactForm() {
                 Name
               </label>
               <div className="input-group">
-                <span className="input-group-text bg-white">
-                  <FontAwesomeIcon icon={faUser} />
-                </span>
                 <input
                   type="text"
                   id="name"
@@ -51,9 +46,6 @@ function ContactForm() {
                 Email
               </label>
               <div className="input-group">
-                <span className="input-group-text bg-white">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
                 <input
                   type="email"
                   id="email"
@@ -72,9 +64,6 @@ function ContactForm() {
                 Message
               </label>
               <div className="input-group">
-                <span className="input-group-text bg-white">
-                  <FontAwesomeIcon icon={faCommentDots} />
-                </span>
                 <textarea
                   id="message"
                   name="message"
